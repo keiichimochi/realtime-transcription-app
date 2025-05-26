@@ -1,0 +1,38 @@
+.App {
+  text-align: center;
+}
+
+.recording-indicator {
+  animation: pulse 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes pulse {
+  from {
+    opacity: 0.6;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.transcription-segment {
+  transition: all 0.3s ease;
+}
+
+.transcription-segment:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.audio-level-bar {
+  background: linear-gradient(90deg, #4caf50, #ffeb3b, #f44336);
+  border-radius: 4px;
+  height: 8px;
+  overflow: hidden;
+}
+
+.speaker-chip {
+  background: linear-gradient(45deg, #2196f3, #21cbf3);
+  color: white;
+  font-weight: bold;
+}
