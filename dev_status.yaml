@@ -1,0 +1,80 @@
+project_name: "realtime-transcription-app"
+description: "リアルタイム音声文字起こしアプリケーション - WebSocketを使用したリアルタイム音声認識システム"
+version: "1.0.0"
+status: "ACTIVE"
+
+development:
+  current_phase: "PRODUCTION_READY"
+  last_updated: "2025-01-27"
+  
+features:
+  completed:
+    - "リアルタイム音声認識"
+    - "WebSocket通信"
+    - "React + TypeScript フロントエンド"
+    - "FastAPI バックエンド"
+    - "WhisperX音声認識エンジン"
+    - "話者分離機能"
+    - "音声レベル表示"
+    - "文字起こし結果ダウンロード"
+    - "レスポンシブUI"
+    - "セットアップスクリプト"
+  
+  in_progress: []
+  
+  planned:
+    - "多言語対応"
+    - "音声ファイルアップロード機能"
+    - "録音履歴管理"
+    - "Docker対応"
+    - "クラウドデプロイ"
+
+tech_stack:
+  frontend:
+    - "React 18"
+    - "TypeScript"
+    - "Material-UI (MUI)"
+    - "WebSocket"
+    - "Web Audio API"
+  
+  backend:
+    - "FastAPI"
+    - "WhisperX"
+    - "WebSocket"
+    - "NumPy"
+    - "SoundFile"
+    - "PyAudio"
+
+architecture:
+  type: "Client-Server"
+  communication: "WebSocket"
+  ports:
+    frontend: 3210
+    backend: 4321
+
+deployment:
+  status: "LOCAL_READY"
+  requirements:
+    - "Python 3.9-3.12"
+    - "Node.js 16+"
+    - "macOS (推奨)"
+  
+  setup_commands:
+    - "./setup.sh"
+    - "./start.sh"
+
+milestones:
+  - date: "2025-01-27"
+    title: "Initial Release"
+    description: "基本的なリアルタイム音声文字起こし機能の実装完了"
+    status: "COMPLETED"
+
+next_tasks:
+  - "多言語対応の実装"
+  - "音声ファイルアップロード機能"
+  - "Docker化"
+
+repository:
+  url: "https://github.com/keiichimochi/realtime-transcription-app"
+  branch: "main"
+  last_commit: "🎤 Initial commit: Real-time transcription app" 
